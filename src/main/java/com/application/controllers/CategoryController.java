@@ -47,8 +47,9 @@ public class CategoryController {
 		return ResponseEntity.ok(service.findByIdCategory(idcategory));
 	}
 
+//I add a comment here
 
-
+//And an other one because I wanted
 
     @PutMapping("/categories/{idcategory}")
 	public ResponseEntity<CategoryDto> updateCategory(@PathVariable("idcategory") Long idcategory, @RequestBody Category category){
