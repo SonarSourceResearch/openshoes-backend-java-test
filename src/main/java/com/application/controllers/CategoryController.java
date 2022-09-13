@@ -52,6 +52,7 @@ public class CategoryController {
 //And an other one because I wanted
 
     @PutMapping("/categories/{idcategory}")
+    //Should I set a comment here ? maybe not
 	public ResponseEntity<CategoryDto> updateCategory(@PathVariable("idcategory") Long idcategory, @RequestBody Category category){
 		return ResponseEntity.ok(service.updateCategory(idcategory, category));
 	}
