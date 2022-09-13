@@ -60,3 +60,9 @@ public class CategoryController {
 	}
 }
 
+
+// @PutMapping("/categories/{idcategory}")
+// 	public ResponseEntity<CategoryDto> updateCategory(@PathVariable("idcategory") Long idcategory, @RequestBody CategoryDto category){
+//        Category category = new Category(categoryDto.getType())
+// 		return ResponseEntity.ok(service.updateCategory(idcategory, category));
+// 	}
