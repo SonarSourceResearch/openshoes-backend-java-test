@@ -51,13 +51,13 @@ public class CategoryController {
 
 //And an other one because I wanted
 
-    @PutMapping("/categories/{idcategory}")
+    @PutMapping("/categories/{idcategory}")//this one as well, that 's not the original one'
     //Should I set a comment here ? maybe not
     //let's commit before to fixed
     //adding a comment again
 	public ResponseEntity<CategoryDto> updateCategory(@PathVariable("idcategory") Long idcategory, @RequestBody CategoryDto categoryDto){
 		Category category = new Category(categoryDto.getType());
-		return ResponseEntity.ok(service.updateCategory(idcategory, category));
+		return ResponseEntity.ok(service.updateCategory(idcategory, category));//that's not the original lines
 	}
 
 
