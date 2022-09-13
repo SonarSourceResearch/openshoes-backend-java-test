@@ -56,7 +56,7 @@ public class CategoryController {
     //let's commit before to fixed
     //adding a comment again
 	public ResponseEntity<CategoryDto> updateCategory(@PathVariable("idcategory") Long idcategory, @RequestBody CategoryDto categoryDto){
-		Category category = new Category(categoryDto.getType())
+		Category category = new Category(categoryDto.getType());
 		return ResponseEntity.ok(service.updateCategory(idcategory, category));
 	}
 
